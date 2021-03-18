@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,10 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
+        backgroundColor: Colors.blue[100],
         appBar: AppBar(
-          title: Center(child: Text("I Am Rich ")),
+          title: Text("I Am Rich"),
+          backgroundColor: Colors.green[900],
+        ),
+        body: Center(
+          child: Image(
+            image: AssetImage('images/X.jpg'),
+          ),
         ),
       ),
     );
